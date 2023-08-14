@@ -1,0 +1,253 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Poppins&family=Tektur&family=VT323&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Handjet', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Tektur', cursive;
+font-family: 'VT323', monospace;
+}
+.banner
+{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    background: #fff;
+    -webkit-transition: 0.5;
+    -o-transition: 0.5;
+    transition: 0.5;
+}
+.banner.night
+{
+    background: #333;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between ;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+header .logo
+{
+  color: #333;  
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+header .logo span
+{
+    color: lightsteelblue;
+}
+header ul
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+  text-decoration: none;
+  font-weight: 500;  
+  font-size: 1.2em;
+  color: #333;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.content
+{
+    position: relative;
+    max-width: 700px;
+    z-index: 10;
+}
+.content h3
+{
+    font-size: 2em;
+    color: #333;
+    font-weight: 200;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.content h2
+{
+    font-size: 5.5em;
+    color: #333;
+    font-weight: 700;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.content h2 span
+{
+    color: lightsteelblue;
+}
+.content p
+{
+    font-size: 1.2em;
+    color: #666;
+    margin: 10px 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.content button
+{
+    position: relative;
+    background: lightsteelblue;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    margin-right: 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.sci
+{
+    position: inherit;
+    bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+}
+.sci li
+{
+    list-style: none;
+}
+sci li a 
+{
+  text-decoration: none;  
+  font-size: 1.75em;
+  color: #333;
+}
+.sci li a:hover
+{
+    color: lightsteelblue;
+}
+.daynight
+{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: whitesmoke;
+    border-radius: 50%;
+    color: #666;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 2em;
+}
+.banner.night .daynight
+{
+    background: #444;
+    color: whitesmoke
+}
+.daynight ion-icon:nth-child(2)
+.banner.night .daynight ion-icon:nth-child(1)
+{
+    display: none;
+}
+.banner.night .daynight ion-icon:nth-child(2)
+{
+  display: block;
+}
+.banner.night .sci li a:hover
+{
+    color: lightsteelblue;
+}
+.image-container {
+    width: 300px; 
+    height: 300px;
+    position: relative;; 
+}
+
+.image-container img {
+    position: inherit; 
+    width: 100%;
+    height: 100%;
+    -webkit-animation: dance 10s ease infinite;
+            animation: dance 10s ease infinite; 
+}
+
+@-webkit-keyframes dance {
+    0%, 50% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(60px);
+                transform: translateY(60px); 
+    }
+}
+
+@keyframes dance {
+    0%, 50% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(60px);
+                transform: translateY(60px); 
+    }
+}
